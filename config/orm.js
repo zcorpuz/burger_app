@@ -40,7 +40,7 @@ const orm = {
           cb(result);
         });
     },
-    update: function(table, objColVals, condition, cb) {
+    updateOne: function(table, objColVals, condition, cb) {
         let queryString = "UPDATE " + table;
     
         queryString += " SET ";
@@ -56,5 +56,5 @@ const orm = {
       },
 };
 
-
+//Export for burger.js
 module.exports = orm;
