@@ -3,7 +3,7 @@ const orm = require('../config/orm');
 
 const burgers = {
     selectAll: (cb) => {
-      orm.all("burgers", res => cb(res));
+      orm.selectAll("burgers", res => cb(res));
     },
     insertOne: (col, val, cb) => {
       orm.insertOne("burgers", col, val, res => cb(res));
@@ -13,4 +13,4 @@ const burgers = {
     },
 };
 
-module.exports = burger;
+module.exports = burgers;
