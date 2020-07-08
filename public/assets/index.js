@@ -44,3 +44,11 @@ $(() => {
     });
     
 });
+
+//Need to figure out how to get right buttons to render created burgers
+
+//Each rendered burger will have a Devour Button where it will delete burger
+
+//Every burger added will be added to MySql
+
+//Every Devoured burger will be removed from Database
